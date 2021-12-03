@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--guia navegador-->
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--Titulo-->
+    <section class="intro">
+        <h1>Pedra, Papel e Tesoura</h1>
+    </section>
+
+    <!--regras      <span class="secreat">, sabre de luz</span>-->
+    <section class="rules">
+        <div class="explain">
+            <h2>Regras</h2>
+            <ul>
+                <li>Você <span>x</span> Máquina</li>
+                <br>
+                <li>Escolha: <span>pedra</span>, <span>papel</span> ou <span>tesoura</span> </li>
+                <br>
+                <li>Pressione <span>"Jogar"</span> para iniciar a batalha</li>
+                <br>
+                <li>Pressione <span>"Recomeçar"</span> para jogar novamente</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--BATTLE-->
+    <section class="battle">
+        <div class="battle-intro">
+            <img src="./sword.png" alt="espada" class="sword">
+            <h2>Batalha</h2>
+            <img src="./sword.png" alt="espada" class="sword">
+        </div>
+        <div class="battle-inputs">
+            <div class="battle-user">
+                <h3>Você</h3>
+                <img src="./jedi.jpg" class="player">
+                <p>Sua Escolha:</p>
+                <select name="userInput" id="userInput">
+                    <option selected disabled value="">Escolha</option>
+                    <option>pedra</option>
+                    <option>papel</option>
+                    <option>tesoura</option>
+                </select>
+            </div>
+            <div class="battle-pc">
+                <h3>Máquina</h3>
+                <img src="./robot.png" class="player">
+                <p>Escolha da Máquina:</p>
+                <p id="robotChoice"></p>
+            </div>
+        </div>
+        <button class="jogar" onclick="playGame()">Jogar</button>
+
+        <br>
+        <h2 id="results"></h2>
+        <br>
+        <a href="index.html">
+            <button class="recomeçar">Recomeçar</button>
+        </a>
+    </section>
+
+
+
+    <script src="./playGame.js"></script>
+</body>
+
+</html>
